@@ -45,15 +45,13 @@ result = client.query.execute(
 
 ## Configuration
 
-Pass credentials and client options directly:
+Pass your API key directly:
 
 ```ruby
-client = AnswerLayer::Client.new(
-  api_key: "your-api-key",
-  open_timeout: 10,
-  read_timeout: 30
-)
+client = AnswerLayer::Client.new(api_key: "your-api-key")
 ```
+
+See [docs/configuration.md](docs/configuration.md) for timeout, subject header, and advanced configuration options.
 
 ## Resources
 
@@ -85,9 +83,7 @@ See [docs/responses.md](docs/responses.md).
 
 ## Errors
 
-All SDK errors inherit from `AnswerLayer::Error`.
-
-Status-aware errors include bad-request, unauthorized, forbidden, not-found, conflict, gone, unprocessable-entity, rate-limit, server, OAuth, and stream errors.
+All SDK errors inherit from `AnswerLayer::Error`, so applications can rescue one base class for AnswerLayer failures:
 
 ```ruby
 begin
@@ -96,6 +92,8 @@ rescue AnswerLayer::Error => error
   warn error.message
 end
 ```
+
+HTTP response errors inherit from `AnswerLayer::ApiError` and expose `status`, `body`, and `headers`. Status-specific classes are available for common responses such as bad request, unauthorized, not found, rate limit, and server errors.
 
 See [docs/errors.md](docs/errors.md).
 
