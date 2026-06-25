@@ -57,7 +57,18 @@ client = AnswerLayer::Client.new(
 
 ## Resources
 
-Resources group related API methods under the client: `connections`, `query`, `inquiry`, `saved_queries`, `dashboards`, `query_results`, `semantic`, and `identity_broker`.
+Resources group related API methods under the client:
+
+```ruby
+client.connections
+client.query
+client.inquiry
+client.saved_queries
+client.dashboards
+client.query_results
+client.semantic
+client.identity_broker
+```
 
 See [docs/resources.md](docs/resources.md) for method-level documentation.
 
