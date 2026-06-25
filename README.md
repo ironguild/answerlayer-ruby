@@ -55,26 +55,6 @@ client = AnswerLayer::Client.new(
 )
 ```
 
-## Authentication
-
-API-key calls send:
-
-```text
-X-API-Key: <api key>
-```
-
-Subject headers are optional for trusted passthrough contexts:
-
-```ruby
-client = AnswerLayer::Client.new(
-  api_key: "your-api-key",
-  subject_org_id: "customer-org",
-  subject_user_id: "user-123"
-)
-```
-
-OAuth token exchange uses API-key auth and form encoding through `client.identity_broker.exchange_token`.
-
 ## Resource Namespaces
 
 ```ruby
