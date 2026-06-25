@@ -57,18 +57,7 @@ client = AnswerLayer::Client.new(
 
 ## Resources
 
-Resource methods are grouped by API area. For example:
-
-```ruby
-client.connections.list
-client.query.execute(connection_id: "connection-id", query: "SELECT 1 AS ok")
-client.inquiry.create_session(connection_id: "connection-id")
-client.saved_queries.list
-client.dashboards.manifest(dashboard_id: "dashboard-id")
-client.query_results.get(handle: "result-handle")
-client.semantic.components(component: "entities", connection_id: "connection-id")
-client.identity_broker.jwks
-```
+Resources group related API methods under the client, such as connections, queries, dashboards, saved queries, semantic-layer APIs, and identity broker APIs.
 
 See [docs/resources.md](docs/resources.md) for method-level documentation.
 
