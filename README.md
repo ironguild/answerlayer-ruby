@@ -1,6 +1,6 @@
 # AnswerLayer Ruby SDK
 
-The AnswerLayer Ruby SDK is a lightweight client for calling the AnswerLayer API from Ruby applications. It exposes one `AnswerLayer::Client` with resources for connections, query execution, inquiry sessions, saved queries, dashboards, query results, semantic-layer APIs, and identity broker APIs.
+The AnswerLayer Ruby SDK is a lightweight client for calling the AnswerLayer API from Ruby applications. It exposes one `AnswerLayer::Client` with resources for connections, query execution, inquiry sessions, saved queries, dashboards, query results, semantic layer, and identity broker.
 
 ## Requirements
 
@@ -57,7 +57,7 @@ client = AnswerLayer::Client.new(
 
 ## Resources
 
-Resources group related API methods under the client, such as connections, queries, dashboards, saved queries, semantic-layer APIs, and identity broker APIs.
+Resources group related API methods under the client, such as connections, queries, dashboards, saved queries, semantic layer, and identity broker.
 
 See [docs/resources.md](docs/resources.md) for method-level documentation.
 
