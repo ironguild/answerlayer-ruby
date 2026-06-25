@@ -1,6 +1,6 @@
-# Resource Methods
+# Resources
 
-The SDK exposes one `AnswerLayer::Client` with resource namespaces.
+The SDK exposes one `AnswerLayer::Client` with resources grouped by API area.
 
 ```ruby
 client = AnswerLayer::Client.new
