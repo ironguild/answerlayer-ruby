@@ -1,6 +1,7 @@
 .bundle/
 .env*.local
 .local/
+.idea/
 *.gem
 coverage/
 tmp/
