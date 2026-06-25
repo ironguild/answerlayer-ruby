@@ -57,15 +57,13 @@ client = AnswerLayer::Client.new(
 
 ## Resources
 
+Resource methods are grouped by API area. For example:
+
 ```ruby
-client.connections
-client.query
-client.inquiry
-client.saved_queries
-client.dashboards
-client.query_results
-client.semantic
-client.identity_broker
+client.connections.list
+client.query.execute(connection_id: "connection-id", query: "SELECT 1 AS ok")
+client.saved_queries.list
+client.dashboards.manifest(dashboard_id: "dashboard-id")
 ```
 
 See [docs/resources.md](docs/resources.md) for method-level documentation.
