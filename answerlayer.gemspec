@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.name = "answerlayer"
   spec.version = AnswerLayer::VERSION
   spec.authors = [ "AnswerLayer Maintainers" ]
-  spec.email = [ "maintainers@example.com" ]
+  spec.email = [ "matt@answerlayer.com" ]
 
   spec.summary = "Ruby API wrapper for the AnswerLayer API."
   spec.description = "A dependency-light Ruby client for AnswerLayer connections, queries, inquiry sessions, saved queries, dashboards, query results, semantic-layer APIs, and identity broker APIs."
