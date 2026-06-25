@@ -1,0 +1,31 @@
+{
+  "dashboard_id": "8acf1f64-3d0a-4989-94d7-24e2dd32eb48",
+  "title": "Untitled dashboard",
+  "tiles": [
+    {
+      "tile_id": "7edf22ae-f2a4-47ce-b49b-d726e3fb701d",
+      "title": "Mayoral Decisions",
+      "tile_key": "mayoral_decisions",
+      "visualization": {
+        "chart_type": "table",
+        "tile_key": "mayoral_decisions",
+        "encoding": {
+          "kind": "table",
+          "columns": null,
+          "roles": null
+        }
+      },
+      "expected_columns": [
+
+      ],
+      "parameters": [
+
+      ],
+      "data_url": "/api/v1/dashboards/8acf1f64-3d0a-4989-94d7-24e2dd32eb48/tiles/7edf22ae-f2a4-47ce-b49b-d726e3fb701d/data",
+      "pagination": {
+        "default_page_size": 1000,
+        "max_page_size": 10000
+      }
+    }
+  ]
+}

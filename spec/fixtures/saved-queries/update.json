@@ -1,0 +1,20 @@
+{
+  "name": "SDK validation query",
+  "description": "SDK live response verification",
+  "visibility": "private",
+  "id": "7fba4e04-0ed2-4262-bc8f-5cb2bfdb1c47",
+  "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+  "created_by": "172e379a-9136-40ef-a861-e5dec6979eb6",
+  "sql": "SELECT 1 AS ok",
+  "connection_id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+  "created_at": "2026-06-24T18:02:07.931692",
+  "updated_at": "2026-06-24T18:02:10.859809",
+  "effective_visibility": "private",
+  "approved_by_user_id": null,
+  "approved_at": null,
+  "approved_by_email": null,
+  "approved_by_name": null,
+  "dashboards": [
+
+  ]
+}

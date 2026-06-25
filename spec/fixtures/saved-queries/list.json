@@ -1,0 +1,225 @@
+{
+  "saved_queries": [
+    {
+      "name": "Year that had highest total decisions",
+      "description": "DataMarket dashboard query: 3_2_w_tile_2c_peak_year_kpi.sql",
+      "visibility": "org",
+      "id": "500d3a51-219a-48ea-9cf2-daaee1029e57",
+      "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+      "created_by": "172e379a-9136-40ef-a861-e5dec6979eb6",
+      "sql": "-- Year that had highest total decisions\nSELECT\n  decision_year,\n  COUNT(*) AS total_decisions\nFROM strong_mayor_decisions\nWHERE decision_year BETWEEN 2022 AND 2026\nGROUP BY decision_year\nORDER BY total_decisions DESC\nLIMIT 1",
+      "connection_id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+      "created_at": "2026-06-08T20:51:30.316009",
+      "updated_at": "2026-06-08T20:51:30.316011",
+      "effective_visibility": "org",
+      "approved_by_user_id": null,
+      "approved_at": null,
+      "approved_by_email": null,
+      "approved_by_name": null,
+      "dashboards": [
+
+      ]
+    },
+    {
+      "name": "Registry status breakdown (data sources configured vs. not)",
+      "description": "DataMarket dashboard query: 3_2_r_tile_6b_registry_status_by_wave.sql",
+      "visibility": "org",
+      "id": "447aa6c9-6b29-488e-9e43-41c0093d36b3",
+      "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+      "created_by": "172e379a-9136-40ef-a861-e5dec6979eb6",
+      "sql": "-- Registry status breakdown (data sources configured vs. not)\nSELECT\n  registry_status,\n  designation_wave,\n  COUNT(*) AS municipality_count\nFROM strong_mayor_municipalities\nWHERE designation_status = 'designated'\nGROUP BY registry_status, designation_wave\nORDER BY designation_wave, registry_status",
+      "connection_id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+      "created_at": "2026-06-08T20:51:30.198038",
+      "updated_at": "2026-06-08T20:51:30.198040",
+      "effective_visibility": "org",
+      "approved_by_user_id": null,
+      "approved_at": null,
+      "approved_by_email": null,
+      "approved_by_name": null,
+      "dashboards": [
+
+      ]
+    },
+    {
+      "name": "Implementation status breakdown across all designated municipalities",
+      "description": "DataMarket dashboard query: 3_2_q_tiles_1c_6a_implementation_status_breakdown.sql",
+      "visibility": "org",
+      "id": "c0243b91-edd7-43c3-b01b-cc3445d59a18",
+      "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+      "created_by": "172e379a-9136-40ef-a861-e5dec6979eb6",
+      "sql": "-- Implementation status breakdown across all designated municipalities\nSELECT\n  implementation_status,\n  COUNT(*) AS municipality_count,\n  ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 1) AS pct\nFROM strong_mayor_municipalities\nWHERE designation_status = 'designated'\nGROUP BY implementation_status\nORDER BY municipality_count DESC",
+      "connection_id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+      "created_at": "2026-06-08T20:51:30.077317",
+      "updated_at": "2026-06-08T20:51:30.077318",
+      "effective_visibility": "org",
+      "approved_by_user_id": null,
+      "approved_at": null,
+      "approved_by_email": null,
+      "approved_by_name": null,
+      "dashboards": [
+
+      ]
+    },
+    {
+      "name": "Top 5 decision types by municipality (pivot-style: municipality x type)",
+      "description": "DataMarket dashboard query: 3_2_n_tile_4d_decision_type_mix_by_top_municipalities.sql",
+      "visibility": "org",
+      "id": "c1087b9d-1891-4797-a720-0f1194164eba",
+      "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+      "created_by": "172e379a-9136-40ef-a861-e5dec6979eb6",
+      "sql": "-- Top 5 decision types by municipality (pivot-style: municipality x type)\nSELECT\n  municipality_name,\n  SUM(CASE WHEN decision_type = 'written_approval' THEN 1 ELSE 0 END) AS written_approval,\n  SUM(CASE WHEN decision_type = 'bylaw_approval' THEN 1 ELSE 0 END) AS bylaw_approval,\n  SUM(CASE WHEN decision_type = 'directive' THEN 1 ELSE 0 END) AS directive,\n  SUM(CASE WHEN decision_type = 'appointment' THEN 1 ELSE 0 END) AS appointment,\n  SUM(CASE WHEN decision_type = 'veto_notice' THEN 1 ELSE 0 END) AS veto_notice,\n  COUNT(*) AS total\nFROM strong_mayor_decisions\nGROUP BY municipality_name\nORDER BY total DESC\nLIMIT 20",
+      "connection_id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+      "created_at": "2026-06-08T20:51:29.958428",
+      "updated_at": "2026-06-08T20:51:29.958429",
+      "effective_visibility": "org",
+      "approved_by_user_id": null,
+      "approved_at": null,
+      "approved_by_email": null,
+      "approved_by_name": null,
+      "dashboards": [
+
+      ]
+    },
+    {
+      "name": "Directive decisions by municipality",
+      "description": "DataMarket dashboard query: 3_2_m_tile_4c_directive_decisions_by_municipality.sql",
+      "visibility": "org",
+      "id": "30b7eb74-6c22-486b-b51f-f97ad232a804",
+      "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+      "created_by": "172e379a-9136-40ef-a861-e5dec6979eb6",
+      "sql": "-- Directive decisions by municipality\nSELECT\n  municipality_name,\n  COUNT(*) AS directives\nFROM strong_mayor_decisions\nWHERE decision_type = 'directive'\nGROUP BY municipality_name\nORDER BY directives DESC\nLIMIT 15",
+      "connection_id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+      "created_at": "2026-06-08T20:51:29.841517",
+      "updated_at": "2026-06-08T20:51:29.841518",
+      "effective_visibility": "org",
+      "approved_by_user_id": null,
+      "approved_at": null,
+      "approved_by_email": null,
+      "approved_by_name": null,
+      "dashboards": [
+
+      ]
+    },
+    {
+      "name": "Veto notices by municipality",
+      "description": "DataMarket dashboard query: 3_2_l_tile_4b_veto_notices_by_municipality.sql",
+      "visibility": "org",
+      "id": "8e54bb6a-e192-447e-ac2a-a29d9dbd7fca",
+      "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+      "created_by": "172e379a-9136-40ef-a861-e5dec6979eb6",
+      "sql": "-- Veto notices by municipality\nSELECT\n  municipality_name,\n  COUNT(*) AS veto_notices\nFROM strong_mayor_decisions\nWHERE decision_type = 'veto_notice'\nGROUP BY municipality_name\nORDER BY veto_notices DESC\nLIMIT 15",
+      "connection_id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+      "created_at": "2026-06-08T20:51:29.721899",
+      "updated_at": "2026-06-08T20:51:29.721900",
+      "effective_visibility": "org",
+      "approved_by_user_id": null,
+      "approved_at": null,
+      "approved_by_email": null,
+      "approved_by_name": null,
+      "dashboards": [
+
+      ]
+    },
+    {
+      "name": "Decision type breakdown overall",
+      "description": "DataMarket dashboard query: 3_2_k_tile_4a_decision_type_breakdown.sql",
+      "visibility": "org",
+      "id": "5d431b28-323a-462a-9f4d-f37176b4f312",
+      "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+      "created_by": "172e379a-9136-40ef-a861-e5dec6979eb6",
+      "sql": "-- Decision type breakdown overall\nSELECT\n  decision_type,\n  COUNT(*) AS total_decisions,\n  ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 1) AS pct_of_total\nFROM strong_mayor_decisions\nGROUP BY decision_type\nORDER BY total_decisions DESC",
+      "connection_id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+      "created_at": "2026-06-08T20:51:29.597695",
+      "updated_at": "2026-06-08T20:51:29.597696",
+      "effective_visibility": "org",
+      "approved_by_user_id": null,
+      "approved_at": null,
+      "approved_by_email": null,
+      "approved_by_name": null,
+      "dashboards": [
+
+      ]
+    },
+    {
+      "name": "Decisions by municipality (top 20)",
+      "description": "DataMarket dashboard query: 3_2_h_tile_3a_top_20_municipalities.sql",
+      "visibility": "org",
+      "id": "4d669670-b53e-4db9-8e36-4eccbe7b3890",
+      "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+      "created_by": "172e379a-9136-40ef-a861-e5dec6979eb6",
+      "sql": "-- Decisions by municipality (top 20)\nSELECT\n  municipality_name,\n  COUNT(*) AS total_decisions\nFROM strong_mayor_decisions\nGROUP BY municipality_name\nORDER BY total_decisions DESC\nLIMIT 20",
+      "connection_id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+      "created_at": "2026-06-08T20:51:29.479398",
+      "updated_at": "2026-06-08T20:51:29.479400",
+      "effective_visibility": "org",
+      "approved_by_user_id": null,
+      "approved_at": null,
+      "approved_by_email": null,
+      "approved_by_name": null,
+      "dashboards": [
+
+      ]
+    },
+    {
+      "name": "Decisions by year filtered to 2025 expansion municipalities",
+      "description": "DataMarket dashboard query: 3_2_g_tile_2b_2025_expansion_ramp_up.sql",
+      "visibility": "org",
+      "id": "679fbcc9-a00d-46ef-816d-1b2c6de65838",
+      "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+      "created_by": "172e379a-9136-40ef-a861-e5dec6979eb6",
+      "sql": "-- Decisions by year filtered to 2025 expansion municipalities\nSELECT\n  d.decision_year,\n  COUNT(*) AS decisions_2025_expansion\nFROM strong_mayor_decisions d\nJOIN strong_mayor_municipalities m ON d.municipality_name = m.municipality_name\nWHERE m.designation_wave = '2025_expansion'\n  AND d.decision_year BETWEEN 2022 AND 2026\nGROUP BY d.decision_year\nORDER BY d.decision_year ASC",
+      "connection_id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+      "created_at": "2026-06-08T20:51:29.360176",
+      "updated_at": "2026-06-08T20:51:29.360178",
+      "effective_visibility": "org",
+      "approved_by_user_id": null,
+      "approved_at": null,
+      "approved_by_email": null,
+      "approved_by_name": null,
+      "dashboards": [
+
+      ]
+    },
+    {
+      "name": "Decisions year over year (filtered to 2022-2026)",
+      "description": "DataMarket dashboard query: 3_2_f_tile_2a_decisions_year_over_year.sql",
+      "visibility": "org",
+      "id": "55011dc9-55fb-44d7-b182-7121a57b5f0d",
+      "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+      "created_by": "172e379a-9136-40ef-a861-e5dec6979eb6",
+      "sql": "-- Decisions year over year (filtered to 2022-2026)\nSELECT\n  decision_year,\n  COUNT(*) AS total_decisions\nFROM strong_mayor_decisions\nWHERE decision_year BETWEEN 2022 AND 2026\nGROUP BY decision_year\nORDER BY decision_year ASC",
+      "connection_id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+      "created_at": "2026-06-08T20:51:29.242215",
+      "updated_at": "2026-06-08T20:51:29.242217",
+      "effective_visibility": "org",
+      "approved_by_user_id": null,
+      "approved_at": null,
+      "approved_by_email": null,
+      "approved_by_name": null,
+      "dashboards": [
+
+      ]
+    },
+    {
+      "name": "Designated municipalities coverage progress",
+      "description": "DataMarket dashboard query: 3_2_a_tile_1a_designated_municipalities.sql",
+      "visibility": "org",
+      "id": "7cf550d8-3664-4721-927e-67bb19537e8d",
+      "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+      "created_by": "172e379a-9136-40ef-a861-e5dec6979eb6",
+      "sql": "-- Designated municipalities coverage progress\nSELECT\n  COUNT(*) AS total_designated_municipalities,\n  SUM(CASE WHEN COALESCE(ingested_count, 0) > 0 THEN 1 ELSE 0 END) AS municipalities_ingested,\n  COUNT(*) - SUM(CASE WHEN COALESCE(ingested_count, 0) > 0 THEN 1 ELSE 0 END) AS municipalities_remaining,\n  ROUND(\n    (COUNT(*) - SUM(CASE WHEN COALESCE(ingested_count, 0) > 0 THEN 1 ELSE 0 END)) * 100.0 /\n    NULLIF(COUNT(*), 0),\n    1\n  ) AS municipalities_remaining_pct\nFROM strong_mayor_municipalities\nWHERE designation_status = 'designated'",
+      "connection_id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+      "created_at": "2026-06-08T20:51:29.122834",
+      "updated_at": "2026-06-08T20:51:29.122835",
+      "effective_visibility": "org",
+      "approved_by_user_id": null,
+      "approved_at": null,
+      "approved_by_email": null,
+      "approved_by_name": null,
+      "dashboards": [
+
+      ]
+    }
+  ],
+  "total": 11
+}

@@ -1,0 +1,16 @@
+{
+  "columns": [
+    "ok"
+  ],
+  "rows": [
+    [
+      1
+    ]
+  ],
+  "row_count": 1,
+  "total_rows": 1,
+  "execution_time_ms": 1759,
+  "next_cursor": null,
+  "result_handle": null,
+  "expires_at": null
+}

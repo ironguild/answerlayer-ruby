@@ -1,0 +1,11 @@
+{
+  "is_valid": true,
+  "query_type": "select",
+  "tables": [
+
+  ],
+  "columns": [
+
+  ],
+  "warning": "Query doesn't specify a LIMIT clause, results will be limited automatically"
+}

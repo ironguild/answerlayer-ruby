@@ -1,0 +1,22 @@
+[
+  {
+    "name": "datamarket",
+    "description": "Canadian municipal data for now, later other things.",
+    "db_type": "athena",
+    "id": "f9e1cde6-aa47-4b29-8b61-9e02c07540c7",
+    "organization_id": "81cceaa2-9443-4cc5-9a72-59e69592667f",
+    "user_id": "172e379a-9136-40ef-a861-e5dec6979eb6",
+    "is_active": true,
+    "created_at": "2026-06-08T01:22:46.173587Z",
+    "updated_at": "2026-06-24T16:38:31.717462Z",
+    "last_connected_at": "2026-06-24T16:38:31.718503",
+    "status": "active",
+    "config": {
+      "aws_region": "ca-central-1",
+      "s3_staging_dir": "s3://datamarket-ca-athena-results/  ",
+      "default_catalog": "datamarket",
+      "workgroup": null
+    },
+    "subject_filter_config": null
+  }
+]

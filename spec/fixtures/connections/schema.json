@@ -1,0 +1,1450 @@
+{
+  "census_profiles": [
+    {
+      "name": "id",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "geo_code",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "geo_name",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "geo_level",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "province_code",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "province_name",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "population_2021",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "population_2016",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "population_pct_change",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "population_density",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "land_area_sqkm",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "total_private_dwellings",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "dwellings_occupied",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "avg_age",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "median_age",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pct_0_to_14",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pct_15_to_64",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pct_65_plus",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "avg_household_size",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "total_households",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "one_person_households",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "median_total_income",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "median_after_tax_income",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "avg_total_income",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "avg_after_tax_income",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "census_year",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "synced_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    }
+  ],
+  "crime_incidents": [
+    {
+      "name": "id",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_id",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "occurrence_date",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "reported_date",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "occurrence_year",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "occurrence_month",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "crime_type",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "crime_category",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "offence",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "neighbourhood",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "ward",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "latitude",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "longitude",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "location_type",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "status",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "synced_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    }
+  ],
+  "house_price_index": [
+    {
+      "name": "id",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "city_code",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "date",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "index_value",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "sa_index_value",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "spc_value",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "mom_change",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "sa_mom_change",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "synced_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    }
+  ],
+  "permits": [
+    {
+      "name": "id",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_id",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "permit_num",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "revision_num",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "permit_type",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "structure_type",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "work_type",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "status",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "street_num",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "street_name",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "street_type",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "street_direction",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "full_address",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "postal",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "geo_id",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "ward",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "community",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "latitude",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "longitude",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "application_date",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "issued_date",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "completed_date",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "description",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "current_use",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "proposed_use",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "dwelling_units_created",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "dwelling_units_lost",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "est_const_cost",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "total_sqft",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "assembly",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "institutional",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "residential",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "business_and_personal_services",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "mercantile",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "industrial",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "interior_alterations",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "demolition",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "builder_name",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "applicant_name",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "contractor_name",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "synced_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    }
+  ],
+  "rental_market": [
+    {
+      "name": "id",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "zone",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "year",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "month",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "bedroom_type",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "vacancy_rate",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "vacancy_reliability",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "avg_rent",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "avg_rent_reliability",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "median_rent",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pct_change",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "units",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "synced_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    }
+  ],
+  "service_requests": [
+    {
+      "name": "id",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_id",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "request_date",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "closed_date",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "request_year",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "request_month",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "request_type",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "request_detail",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "department",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "status",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "neighbourhood",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "ward",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "address",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "latitude",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "longitude",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "channel",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "synced_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    }
+  ],
+  "strong_mayor_decisions": [
+    {
+      "name": "id",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "municipality_name",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "province",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_id",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "legacy_table",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "legacy_id",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "decision_number",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "decision_year",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "decision_label",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "title",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "summary",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "notes",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "amended_by",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "rescinded_by",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "decision_type",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pdf_url",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pdf_local_path",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pdf_sha256",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pdf_text",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_url",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "raw_link_text",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "adapter_name",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "adapter_metadata_json",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "document_content_type",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "document_kind",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "published_date",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "scrape_status",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "metadata_status",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pdf_status_code",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "text_char_count",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "scraped_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "synced_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "municipality_slug",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "municipality_slug",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    }
+  ],
+  "strong_mayor_municipalities": [
+    {
+      "name": "id",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "municipality_slug",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "municipality_name",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "official_name",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "province",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "designation_source",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "designation_wave",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "designation_effective_date",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "designation_status",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_url",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "reference_url",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "adapter_type",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "registry_status",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "implementation_tier",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "implementation_status",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "next_action",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "blockers_json",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "notes",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "discovered_count",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "ingested_count",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "ok_count",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "with_text_count",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "stale_link_count",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "text_empty_count",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "document_error_count",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "last_discovered_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "last_ingested_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "last_assessed_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "synced_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    }
+  ],
+  "toronto_mayoral_decisions": [
+    {
+      "name": "id",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_id",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "decision_number",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "decision_year",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "decision_label",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "title",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "summary",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "notes",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "amended_by",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "rescinded_by",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "decision_type",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pdf_url",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pdf_local_path",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pdf_sha256",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pdf_text",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "published_date",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "scrape_status",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "pdf_status_code",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "text_char_count",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "scraped_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "synced_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    }
+  ],
+  "transit_stops": [
+    {
+      "name": "id",
+      "type": "BIGINT",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "agency_name",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "stop_id",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "stop_code",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "stop_name",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "stop_desc",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "stop_lat",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "stop_lon",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "zone_id",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "stop_url",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "location_type",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "parent_station",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "wheelchair_boarding",
+      "type": "DOUBLE",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "synced_at",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    },
+    {
+      "name": "source_city",
+      "type": "STRING",
+      "description": "",
+      "nullable": true
+    }
+  ]
+}

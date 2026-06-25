@@ -1,0 +1,23 @@
+{
+  "columns": [
+    "total_designated_municipalities",
+    "municipalities_with_ingested_data"
+  ],
+  "rows": [
+    [
+      216,
+      12
+    ]
+  ],
+  "row_count": 1,
+  "total_rows": 1,
+  "next_cursor": null,
+  "result_handle": null,
+  "expires_at": "2026-06-25T16:38:31.740232",
+  "execution_time_ms": 1381,
+  "computed_at": "2026-06-24T16:38:31.740211",
+  "cache_hit": true,
+  "encoding_warnings": [
+
+  ]
+}

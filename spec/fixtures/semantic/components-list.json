@@ -1,0 +1,104 @@
+{
+  "entities": [
+    {
+      "id": "62493cdf-0649-4505-8344-9d7f42e5bbd7",
+      "name": "CensusProfile",
+      "source_table": "census_profiles",
+      "identifier": "id",
+      "temporal_key": null,
+      "description": "Demographic and socioeconomic snapshot for Canadian cities from the 2021 Census, including population, age distribution, household size, income, and dwelling statistics.",
+      "created_at": "2026-06-08T01:29:10.554558+00:00",
+      "updated_at": "2026-06-08T01:29:10.554558+00:00"
+    },
+    {
+      "id": "eade60cb-ff6e-4a0d-9905-d1e9f838d005",
+      "name": "CrimeIncident",
+      "source_table": "crime_incidents",
+      "identifier": "id",
+      "temporal_key": "occurrence_date",
+      "description": "Individual crime incidents reported across Canadian cities, including crime type, category, offence, neighbourhood, location coordinates, and occurrence date.",
+      "created_at": "2026-06-08T01:29:10.573122+00:00",
+      "updated_at": "2026-06-08T01:29:10.573122+00:00"
+    },
+    {
+      "id": "bc25bc43-2a76-4c47-9e28-b52fe3e32eab",
+      "name": "HousePriceIndex",
+      "source_table": "house_price_index",
+      "identifier": "id",
+      "temporal_key": "date",
+      "description": "Monthly Teranet house price index values for Canadian cities, tracking home price trends including seasonally adjusted values, month-over-month changes, and price level indicators.",
+      "created_at": "2026-06-08T01:29:10.585901+00:00",
+      "updated_at": "2026-06-08T01:29:10.585901+00:00"
+    },
+    {
+      "id": "08eb70c7-84dc-41c9-8815-b0bd7a2254be",
+      "name": "Permit",
+      "source_table": "permits",
+      "identifier": "id",
+      "temporal_key": "application_date",
+      "description": "Building and construction permits issued across Canadian cities, covering permit type, structure type, work type, address, estimated construction cost, dwelling units, and key milestone dates.",
+      "created_at": "2026-06-08T01:29:10.598322+00:00",
+      "updated_at": "2026-06-08T01:29:10.598322+00:00"
+    },
+    {
+      "id": "0d66d058-a34b-4940-9272-d330bc4177e9",
+      "name": "StrongMayorDecision",
+      "source_table": "strong_mayor_decisions",
+      "identifier": "id",
+      "temporal_key": "published_date",
+      "description": "Formal decisions issued by mayors under Ontario's strong mayor powers across 92 municipalities, including decision type, title, summary, and associated PDF documents.",
+      "created_at": "2026-06-08T01:29:10.635201+00:00",
+      "updated_at": "2026-06-08T01:29:10.635201+00:00"
+    },
+    {
+      "id": "0fb446cb-92b9-4275-bbbe-6fb27a45b647",
+      "name": "TransitStop",
+      "source_table": "transit_stops",
+      "identifier": "id",
+      "temporal_key": null,
+      "description": "Transit stops across Canadian cities and agencies (e.g. STM, TTC), including stop name, code, geographic coordinates, accessibility (wheelchair boarding), location type, and parent station groupings.",
+      "created_at": "2026-06-08T01:29:10.675773+00:00",
+      "updated_at": "2026-06-08T01:29:10.675773+00:00"
+    },
+    {
+      "id": "037205b4-0dc1-4337-87ea-673f0ec39626",
+      "name": "RentalMarket",
+      "source_table": "rental_market",
+      "identifier": "id",
+      "temporal_key": null,
+      "description": "CMHC rental market data by city, zone, and bedroom type, capturing average and median rents, vacancy rates, rent changes, and total rental unit counts on an annual basis.",
+      "created_at": "2026-06-08T01:29:10.610702+00:00",
+      "updated_at": "2026-06-08T01:29:10.610702+00:00"
+    },
+    {
+      "id": "dc0a6c3e-b852-4d42-ae8d-96b3d1762124",
+      "name": "StrongMayorMunicipality",
+      "source_table": "strong_mayor_municipalities",
+      "identifier": "municipality_slug",
+      "temporal_key": "designation_effective_date",
+      "description": "Reference registry of Ontario municipalities designated under the strong mayor framework, including designation wave, effective date, implementation status, and data ingestion progress tracking.",
+      "created_at": "2026-06-08T01:29:10.648466+00:00",
+      "updated_at": "2026-06-08T01:29:10.648466+00:00"
+    },
+    {
+      "id": "a4a53a7a-90c6-4435-8b05-ff74284d4c0a",
+      "name": "ServiceRequest",
+      "source_table": "service_requests",
+      "identifier": "id",
+      "temporal_key": "request_date",
+      "description": "Municipal service requests submitted by residents across Canadian cities, including request type, department, neighbourhood, submission channel, status, and open/close dates.",
+      "created_at": "2026-06-08T01:29:10.622578+00:00",
+      "updated_at": "2026-06-08T01:29:10.622578+00:00"
+    },
+    {
+      "id": "c2399e2a-427e-48ec-ad96-ebf284d0234a",
+      "name": "TorontoMayoralDecision",
+      "source_table": "toronto_mayoral_decisions",
+      "identifier": "id",
+      "temporal_key": "published_date",
+      "description": "Mayoral decisions issued by the Mayor of Toronto, including decision type, title, summary, PDF source documents, and publication dates — covering committee structures, appointments, bylaw approvals, and more.",
+      "created_at": "2026-06-08T01:29:10.663076+00:00",
+      "updated_at": "2026-06-08T01:29:10.663076+00:00"
+    }
+  ]
+}
