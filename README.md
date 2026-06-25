@@ -101,4 +101,4 @@ See [docs/errors.md](docs/errors.md).
 
 Examples under `examples/` show common SDK usage:
 
-- `examples/basic_usage.rb`
+- [examples/basic_usage.rb](examples/basic_usage.rb)
