@@ -102,11 +102,3 @@ See [docs/errors.md](docs/errors.md).
 Examples under `examples/` show common SDK usage:
 
 - `examples/basic_usage.rb`
-
-## Safety
-
-Keep credentials out of source control:
-
-- API keys
-- JWTs
-- private datasets
